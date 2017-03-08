@@ -18,14 +18,12 @@ import weibo.demo.carl.co.viewpagerlikeweibodemo.fregment.FragmentTwo;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private ViewPager mViewPager;
-    private Toolbar mToolbar;
     private TextView mToolbarTitle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mToolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(mToolbar);
+        setSupportActionBar((Toolbar)findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         initView();
     }

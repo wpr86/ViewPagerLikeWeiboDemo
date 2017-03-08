@@ -26,7 +26,6 @@ public class ShareActivity extends AppCompatActivity {
         mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 ShareActivity.this.finish();
             }
         });

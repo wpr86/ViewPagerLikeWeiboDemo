@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享界面"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/share_cross_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_radio_height"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:background="@color/bottom_group"
+        android:src="@mipmap/camera_edit_cross_highlighted"/>
+
+</LinearLayout>

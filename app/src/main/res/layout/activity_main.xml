@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myradio="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bottom_group">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <weibo.demo.carl.co.viewpagerlikeweibodemo.ui.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:scrollbars="none" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_radio_height"
+        android:background="@color/bottom_group"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+        <weibo.demo.carl.co.viewpagerlikeweibodemo.ui.CustomRadioButton
+            android:id="@+id/radio_one"
+            style="@style/navigation_style"
+            android:checked="true"
+            myradio:drawableTop="@drawable/selector_main_bottom_tab_one"
+            myradio:drawableSize="@dimen/radio_button_imag_height"
+            android:text="@string/one_text" />
+
+        <weibo.demo.carl.co.viewpagerlikeweibodemo.ui.CustomRadioButton
+            android:id="@+id/radio_two"
+            style="@style/navigation_style"
+            android:checked="false"
+            myradio:drawableTop="@drawable/selector_main_bottom_tab_two"
+            myradio:drawableSize="@dimen/radio_button_imag_height"
+            android:text="@string/two_text" />
+
+        <ImageButton
+            android:id="@+id/center_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:clickable="true"
+            android:layout_margin="2dp"
+            android:src="@drawable/center_button"/>
+
+        <weibo.demo.carl.co.viewpagerlikeweibodemo.ui.CustomRadioButton
+            android:id="@+id/radio_three"
+            style="@style/navigation_style"
+            android:checked="false"
+            myradio:drawableTop="@drawable/selector_main_bottom_tab_three"
+            myradio:drawableSize="@dimen/radio_button_imag_height"
+            android:text="@string/three_text" />
+
+        <weibo.demo.carl.co.viewpagerlikeweibodemo.ui.CustomRadioButton
+            android:id="@+id/radio_four"
+            style="@style/navigation_style"
+            android:checked="false"
+            myradio:drawableTop="@drawable/selector_main_bottom_tab_fore"
+            myradio:drawableSize="@dimen/radio_button_imag_height"
+            android:text="@string/fore_text" />
+    </RadioGroup>
+
+</LinearLayout>

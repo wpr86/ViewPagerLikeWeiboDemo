@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViewPagerLikeWeiboDemo</string>
+    <string name="one_text">首页</string>
+    <string name="two_text">消息</string>
+    <string name="three_text">发现</string>
+    <string name="fore_text">我</string>
+</resources>
